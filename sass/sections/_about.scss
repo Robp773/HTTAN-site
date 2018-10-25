@@ -1,0 +1,15 @@
+.about {
+    height: 100vh;
+    background: white;
+    margin-top: -8.75rem;
+    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+  
+    &__content{
+      position: relative;
+      top: 10rem;
+    }
+    &__h2 {
+      font-size: 5rem;
+      text-align: center;
+    }
+  }
