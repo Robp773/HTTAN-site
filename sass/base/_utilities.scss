@@ -4,3 +4,13 @@
     top: 50%;
     transform: translate(-50%, -50%);
 }
+
+.underliner{
+    animation: underline 1.5s .5s forwards;
+    margin: auto;
+    border: 3px solid transparent;
+}
+
+.u-ital{
+    font-style: italic;
+}
