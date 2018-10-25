@@ -1,6 +1,11 @@
 .nav {
-  background: rgba(0, 0, 0, 0.25);
-  padding: .5rem;
+  background: $color-primary;
+  padding: 0.5rem;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  font-family: 'Bitter', serif;
+
 
   &__content {
     text-align: center;
@@ -12,13 +17,12 @@
       margin: 0 1rem;
       border-bottom: 2px solid transparent;
       border-top: 2px solid transparent;
-      transition: .5s all;
+      transition: 0.5s all;
 
       &:hover {
         border-bottom: 2px solid $color-secondary;
         border-top: 2px solid $color-secondary;
       }
-
     }
   }
 }
