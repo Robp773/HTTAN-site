@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Krub" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+
     <title>How To Think About Nothing</title>
 </head>
 
@@ -21,67 +27,129 @@
         </ul>
     </div>
 
-    <div class="home">
-
-        <div class="home__bg-video-parent">
-            <video class="home__bg-video abs-center" autoplay muted loop>
-                <source src="./img/Wave-Sitting.mp4" type="video/mp4">
-                Your browser is not supported!
-            </video>
+    <div class="intro">
+        <div class="intro__content">
+            <h2 class="intro__heading">How to <div class="u-underline">Think</div> About <div class="u-underline">
+                    Nothing </div>
+            </h2>
         </div>
+    </div>
 
-        <div class="home__initial-content">
-            <img class="home__logo" src="./img/yoga.svg" />
-            <h1 class="home__primary-header">How to Think About
+    <div class="instructions-intro">
+        <h2 class="instructions-intro__header">Thinking About Nothing</h2>
+        <div class="instructions-intro__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt fugiat
+            molestiae corporis necessitatibus! Illum dolorem at iste cum fuga, deleniti vitae quae quam dolores aliquid
+            itaque, deserunt id, ipsum quo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi debitis
+            atque assumenda accusamus quasi aliquid incidunt. Nemo culpa veritatis eveniet molestias accusamus
+            reiciendis ducimus at quod reprehenderit, animi odio quae!</div>
+        <button class="instructions-intro__button">Begin</button>
+    </div>
 
-                <div class="home__nothing-parent">
-                    <div class="underliner"></div>
-                    <span>N</span>
-                    <span>o</span>
-                    <span>t</span>
-                    <span>h</span>
-                    <span>i</span>
-                    <span>n</span>
-                    <span>g</span>
-                    <div class="underliner"></div>
-                </div>
-            </h1>
+    <!-- <div class="about">
+
+        <h2 class="about__header">Placeholder Instructions Intro Section</h2>
+        <div class="about__bio-mugshot-parent">
+            <div class="about__bio">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis ab neque rem
+                aspernatur fugiat magni porro maxime dolorem nemo inventore, nostrum velit ratione laudantium corrupti?
+                Nam rerum nulla cupiditate est. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, sint
+                doloribus pariatur quae quod similique culpa expedita facere vero illum, explicabo minus at odio
+                laudantium. Accusantium laudantium quidem molestias blanditiis.</div>
+            <div class="about__mugshot-parent">
+                <img class="about__mugshot" src="./img/yoga.svg" alt="mugshot" />
+            </div>
         </div>
+    </div> -->
 
+    <div class="gallery">
 
-        <div class="home__definition">
-            <div class="home__def-wrapper">
+        <div class="main-carousel abs-center" data-flickity='{ "cellAlign": "left", "contain": true }'>
 
-                <h2 class="home__def-heading">noth·ing</h2>
-                <span class="home__def-pronounce">/`nəTHiNG/</span>
-
-                <div>
-                    <h4 class="home__def-type u-ital">pronoun</h4>
-                    <ul class="home__def-ul">
-                        <li> not anything; no single thing.</li>
-                        <li class="home__def-sentence">"I said nothing"</li>
-                        <li class="home__def-synonyms">
-                            <span class="u-ital">synonyms: </span>
-                            not a thing, not anything, nil, zero, naught/nought;
-                        </li>
-                    </ul>
-                </div>
+            <div class="carousel-cell">
+                <img class="carousel-image" src="https://images.unsplash.com/photo-1532798442725-41036acc7489?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2146ef1475a7c37418d208106efd19e9&auto=format&fit=crop&w=1267&q=80" />
+            </div>
+            <div class="carousel-cell">
+                <img class="carousel-image" src="https://images.unsplash.com/photo-1510024161681-8a1f66ed1a25?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4ace18e553fd0ec2febe6b9fbdf1798b&auto=format&fit=crop&w=1350&q=80" />
+            </div>
+            <div class="carousel-cell">
+                <img class="carousel-image" src="https://images.unsplash.com/photo-1520769945061-0a448c463865?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=aadd8f49071ac32446f1299af680c229&auto=format&fit=crop&w=1350&q=80" />
+            </div>
+            <div class="carousel-cell">
+                <img class="carousel-image" src="https://images.unsplash.com/photo-1526779259212-939e64788e3c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=41a3bf84b4e02676a3cdf4414f08dea0&auto=format&fit=crop&w=1353&q=80" />
+            </div>
+            <div class="carousel-cell">
+                <img class="carousel-image" src="https://images.unsplash.com/photo-1530368333607-c100785945b5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bb4098dd2c48ea712a82acc251e8c515&auto=format&fit=crop&w=1267&q=80" />
+            </div>
+            <div class="carousel-cell">
+                <img class="carousel-image" src="https://images.unsplash.com/photo-1528659432556-884cfe1480ef?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f6355639db8c9bc5d8fb57fa1fe91548&auto=format&fit=crop&w=1349&q=80" />
+            </div>
+            <div class="carousel-cell">
+                <img class="carousel-image" src="https://images.unsplash.com/photo-1489908990827-08a75c580832?ixlib=rb-0.3.5&s=0c29796489b0009adbd21ab199072501&auto=format&fit=crop&w=1350&q=80" />
             </div>
         </div>
     </div>
 
-    <div class="about">
 
-        <div class="about__content">
-            <h2 class="about__h2">Further Sections will be added down here</h2>
+    <div class="contact-schedule">
+
+        <div class="contact">
+
+            <h2 class="contact__header">Contact Info</h2>
+            <div class="contact__info-box">Phone: XXX-XXX-XXXX</div>
+            <div class="contact__info-box">Email: example@gmail.com</div>
+            <div class="contact__info-box">
+                <i class="contact__icon fab fa-facebook"></i>
+                <i class="contact__icon fab fa-twitter-square"></i>
+            </div>
+
+
         </div>
-        
+
+        <div class="schedule">
+
+            <div class="schedule__content">
+                <h2 class="schedule__header">Class Schedule</h2>
+
+                <iframe class="schedule__iframe" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=6n07k5vaqp2ur5ga71p6ig5a4c%40group.calendar.google.com&amp;color=%230F4B38&amp;ctz=America%2FNew_York"
+                    style="border-width:0" frameborder="0" scrolling="no">
+                </iframe>
+
+            </div>
+
+        </div>
     </div>
+
+
+
+
+    <!-- <div class="definition">
+        <div class="definition__wrapper">
+
+            <h2 class="definition__heading">noth·ing</h2>
+            <span class="definition__pronounce">/`nəTHiNG/</span>
+
+            <div>
+                <h4 class="definition__type u-ital">pronoun</h4>
+                <ul class="definition__ul">
+                    <li> not anything; no single thing.</li>
+                    <li class="definition__sentence">"I said nothing"</li>
+                    <li class="definition__synonyms">
+                        <span class="u-ital">synonyms: </span>
+                        not a thing, not anything, nil, zero, naught/nought;
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div> -->
+
+
+
+
+
+
+
+
 </body>
-
-
-
-
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="index.js"></script>
