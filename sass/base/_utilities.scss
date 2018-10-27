@@ -14,3 +14,11 @@
 .u-ital{
     font-style: italic;
 }
+
+.u-underline{
+    display: inline-block;
+    text-decoration: underline $color-primary;
+    text-decoration-skip-ink: none;
+
+}
+
