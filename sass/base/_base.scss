@@ -26,14 +26,24 @@ html {
 }
 
 body {
+  font-family: "Arimo", sans-serif;
+
   box-sizing: border-box;
+  background: whitesmoke;
 
   @include respond(tab-port) {
     padding: 0;
   }
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
 
-::-webkit-scrollbar { 
-  display: none; 
+.contact-schedule {
+  margin: 5rem auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50vh;
 }
