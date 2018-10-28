@@ -1,21 +1,19 @@
 .schedule {
   text-align: center;
-
-  // background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-  //   url("./img/schedule-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  box-shadow: 0 1rem 3rem black;
+  box-shadow: 0 0.5rem 2rem gray;
+  padding: 2rem;
 
   &__content {
-    background: $color-primary;
+    // background: rgba(70, 132, 153, 0.75);
     width: fit-content;
-    padding: 1rem;
+    color: gray;
   }
 
   &__header {
-    color: white;
+    color: $color-primary;
     text-align: center;
     font-size: 5rem;
   }
