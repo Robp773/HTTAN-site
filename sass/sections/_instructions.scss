@@ -1,11 +1,8 @@
 .instructions-intro {
   height: 50vh;
   text-align: center;
-  //   margin: 5rem auto;
-  //   clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 100%, 0 0);
-
-  margin: 5rem auto;
-  background: whitesmoke;
+  margin: 8rem auto;
+  // background: whitesmoke;
 
   &__header {
     font-size: 5rem;
@@ -14,7 +11,7 @@
 
   &__text {
     line-height: 175%;
-    margin: auto;
+    margin: 1rem auto;
     font-size: 2rem;
     max-width: 75ch;
     text-align: left;
@@ -26,15 +23,17 @@
     margin: 3rem auto;
     font-size: 2.5rem;
     background: $color-primary;
-    color: white;
+    color: whitesmoke;
     box-shadow: 0 0.75rem 3rem gray;
     border-radius: 200px;
     border: 3px solid transparent;
     outline: none;
+    transition: 0.25s opacity;
     &:hover {
       color: $color-primary;
       background: whitesmoke;
       border: 3px solid $color-primary;
+      cursor: pointer;
     }
     &:active {
       box-shadow: 0 0.25rem 2rem gray;
