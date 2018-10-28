@@ -1,16 +1,23 @@
 .nav {
-  background: $color-primary;
-  padding: 0.5rem;
+  background: whitesmoke;
+  color: black;
+  padding: 0.5em 2rem;
   position: fixed;
   width: 100%;
   z-index: 9999;
 
+  align-items: center;
+  border-bottom: 4px solid $color-primary;
+
   &__content {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
 
-    & > li {
-      color: $color-secondary;
+    & > ul {
+      display: inline-block;
+    }
+
+    & > ul > li {
       display: inline-block;
       margin: 0 1rem;
       border-bottom: 2px solid transparent;
@@ -18,9 +25,15 @@
       transition: 0.5s all;
 
       &:hover {
-        border-bottom: 2px solid $color-secondary;
-        border-top: 2px solid $color-secondary;
+        border-bottom: 2px solid $color-primary;
+        border-top: 2px solid $color-primary;
+        cursor: pointer;
+
       }
     }
+  }
+
+  &__social-media {
+    display: inline-block;
   }
 }
