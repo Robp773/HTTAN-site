@@ -16,13 +16,13 @@
   }
   100% {
     opacity: 0;
-    height: 0;
+    // height: 0;
   }
 }
 
 @keyframes fade-to-transparent {
   100% {
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.75);
   }
 }
 
@@ -30,17 +30,24 @@
   0% {
     opacity: .25;
     width: 0%;
-    border-bottom: 5px solid $color-primary;
+    border-bottom: 5px solid whitesmoke;
   }
   100% {
     opacity: 1;
     width: 100%;
-    border-bottom: 5px solid $color-primary;
+    border-bottom: 5px solid whitesmoke
   }
 }
 
 @keyframes slide-up {
   100% {
     transform: translateY(-7rem);
+  }
+}
+
+
+@keyframes displayNone{
+  0%{
+    display: none;
   }
 }
