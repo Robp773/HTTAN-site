@@ -1,32 +1,51 @@
 .intro {
-  height: 80.5vh;
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%, 0 0);
+  height: 81vh;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%, 0% 0%);
   background: $color-primary;
   position: relative;
+  transform: scale(1.01);
+
 
   &__background {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("./img/httan-header-1.jpg");
+    // gets rid of blurry edges from filter: blur();
+    transform: scale(1.01);
+    position: absolute;
+    background: url("./img/httan-header-1.jpg");
+
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     height: 80vh;
     width: 100vw;
+
     align-items: center;
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%, 0 0);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%, 0% 0%);
+    filter: blur(5px);
+
+  }
+
+  &__darken-cover {
+
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    background: rgba(0, 0, 0, .5);
   }
 
   &__content {
-    opacity: 0;
-    animation: fade-in 4s forwards, slide-up 3s forwards;
-    z-index: 999;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+
   &__heading {
+    opacity: 0;
+    animation: fade-in 6s forwards, slide-up 3s forwards;
     color: white;
     font-size: 6rem;
+
   }
 }
