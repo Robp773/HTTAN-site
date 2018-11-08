@@ -5,32 +5,27 @@
   position: relative;
   transform: scale(1.01);
 
-
   &__background {
     // gets rid of blurry edges from filter: blur();
     transform: scale(1.01);
     position: absolute;
     background: url("./img/httan-header-1.jpg");
-
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     height: 80vh;
     width: 100vw;
-
     align-items: center;
     clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%, 0% 0%);
-    filter: blur(5px);
-
+    filter: blur(10px);
   }
 
   &__darken-cover {
-
     height: 100%;
     width: 100%;
     z-index: 999;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .25);
   }
 
   &__content {
@@ -42,10 +37,11 @@
   }
 
   &__heading {
+    position: relative;
+    top: 8rem;
     opacity: 0;
     animation: fade-in 4s forwards, slide-up 3s forwards;
     color: white;
     font-size: 7rem;
-
   }
 }
