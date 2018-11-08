@@ -56,13 +56,19 @@
     font-size: 3rem;
     margin-top: 4rem;
     box-shadow: 0 1rem 3rem black;
-    border: 0;
+    border: 3px solid transparent;
     border-radius: 50px;
-    transition: 1s all;
+    transition: .1s all;
+    outline: none;
 
     &:hover {
       background: $color-primary;
       color: whitesmoke;
+    }
+
+    &:active{
+      border: 3px solid whitesmoke;
+      box-shadow: none;
     }
   }
 
