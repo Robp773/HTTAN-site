@@ -7,18 +7,16 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="../index.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="instructions.js"></script>
-
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
 </head>
 
-<body>
+<body class="step-bg">
+
     <div class="loading">
 
-
         <video id="videoEl" class="loading__bg-video" autoplay muted loop>
-            <source  src="../img/The-Slow-Dock.mp4" type="video/mp4">
+            <source src="../img/The-Slow-Dock.mp4" type="video/mp4">
             Your browser is not supported!
         </video>
 
@@ -28,17 +26,14 @@
             <div class="rect3"></div>
             <div class="rect4"></div>
             <div class="rect5"></div>
-
         </div>
 
         <h3 class="loading__text">Loading</h3>
+        <div class="loading__refresh-text">If this page is not loading refresh the page.</div>
+        <button class="loading__refresh-btn">Refresh</button>
     </div>
 
-
-
     <div class="steps-intro">
-
-
 
         <div class="steps-intro__initial-content">
             <img class="steps-intro__logo" src="../img/yoga.svg" />
@@ -64,80 +59,123 @@
 
     <div class="step-parent">
 
+        <a href="/public/index.html" class="home-btn">
+            <i class="home-btn__icon fas fa-home"></i>
+        </a>
+
         <div class="step step-one">
 
             <h2 class="step__header">Step One</h2>
 
+            <div class="step-one__videos">
+
+                <h3>Choose a speed</h3>
+
+                <button class="step-one__vid-1">
+                    Fast
+                </button>
+
+                <button class="step-one__vid-2">
+                    Slow
+                </button>
+
+                <div class="step-one__icon-parent">
+                    <i class="step-one__icon fas fa-tachometer-alt"></i>
+                </div>
+                <div class="step-one__video-parent">
+                    <video autoplay muted loop class="step-one__video"></video>
+                </div>
+            </div>
+
             <div class="step__content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit soluta odio quidem, alias fugiat
+                ipsam? Ipsam expedita recusandae at, quam reprehenderit quo alias quisquam ea! Voluptatem aliquid eius
+                modi et? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quam hic esse porro similique
+                minima sint voluptatem minus perferendis, sapiente animi eius harum delectus eum nam sunt rem odit
+                obcaecati!
 
                 <div class="step__btn-parent">
                     <button class="prev">Prev</button>
                     <button class="next">Next</button>
                 </div>
             </div>
-
-
         </div>
 
         <div class="step step-two">
 
-
             <h2 class="step__header">Step Two</h2>
 
             <div class="step__content">
+
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit soluta odio quidem, alias fugiat
+                ipsam? Ipsam expedita recusandae at, quam reprehenderit quo alias quisquam ea! Voluptatem aliquid eius
+                modi et? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quam hic esse porro similique
+                minima sint voluptatem minus perferendis, sapiente animi eius harum delectus eum nam sunt rem odit
+                obcaecati!
                 <div class="step__btn-parent">
                     <button class="prev">Prev</button>
                     <button class="next">Next</button>
                 </div>
 
             </div>
-
-
-
         </div>
         <div class="step step-three">
-
 
             <h2 class="step__header">Step Three</h2>
 
             <div class="step__content">
+
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit soluta odio quidem, alias fugiat
+                ipsam? Ipsam expedita recusandae at, quam reprehenderit quo alias quisquam ea! Voluptatem aliquid eius
+                modi et? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quam hic esse porro similique
+                minima sint voluptatem minus perferendis, sapiente animi eius harum delectus eum nam sunt rem odit
+                obcaecati!
                 <div class="step__btn-parent">
                     <button class="prev">Prev</button>
                     <button class="next">Next</button>
                 </div>
             </div>
-
-
-
-
         </div>
-        <div class="step step-four">
 
+        <div class="step step-four">
 
             <h2 class="step__header">Step Four</h2>
 
             <div class="step__content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit soluta odio quidem, alias fugiat
+                ipsam? Ipsam expedita recusandae at, quam reprehenderit quo alias quisquam ea! Voluptatem aliquid eius
+                modi et? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quam hic esse porro similique
+                minima sint voluptatem minus perferendis, sapiente animi eius harum delectus eum nam sunt rem odit
+                obcaecati!
+
                 <div class="step__btn-parent">
                     <button class="prev">Prev</button>
                     <button class="next">Next</button>
                 </div>
+
             </div>
-
-
-
-
         </div>
+
         <div class="step step-five">
 
             <h2 class="step__header">Step Five</h2>
             <div class="step__content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit soluta odio quidem, alias fugiat
+                ipsam? Ipsam expedita recusandae at, quam reprehenderit quo alias quisquam ea! Voluptatem aliquid eius
+                modi et? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quam hic esse porro similique
+                minima sint voluptatem minus perferendis, sapiente animi eius harum delectus eum nam sunt rem odit
+                obcaecati!
                 <div class="step__btn-parent">
                     <button class="prev">Prev</button>
                     <button class="next">Next</button>
                 </div>
             </div>
         </div>
+
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="instructions.js"></script>
 
 </body>
 
