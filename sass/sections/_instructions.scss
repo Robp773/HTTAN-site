@@ -1,5 +1,4 @@
 .instructions-intro {
-  // height: 50vh;
   text-align: center;
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -16,7 +15,7 @@
 
   &__text {
     line-height: 175%;
-    
+
     margin: 1rem auto;
     font-size: 2rem;
     max-width: 75ch;
@@ -25,7 +24,7 @@
 
   &__button {
     width: fit-content;
-    padding: 2rem 6rem;
+    padding: 1rem 5rem;
     border: 0;
     font-size: 2.5rem;
     background: $color-primary;
@@ -40,6 +39,7 @@
       background: whitesmoke;
       border: 3px solid $color-primary;
       color: $color-primary;
+      
       cursor: pointer;
     }
 
@@ -48,3 +48,4 @@
     }
   }
 }
+
