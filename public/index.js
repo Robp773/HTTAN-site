@@ -2,7 +2,6 @@
 
 $(document).ready(function () {
   $(window).on('scroll', function (e) {
-    console.log(e.currentTarget.scrollY)
     if (e.currentTarget.scrollY >= 1200) {
       $('.contact-schedule').animate({
         opacity: 1

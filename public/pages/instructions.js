@@ -9,7 +9,6 @@ let loadingCounter = 0;
 $(function () {
 
   let loadingTracker = setInterval(function () {
-    console.log(loadingCounter)
     if (loadingCounter === 59) {
       $('.loading').animate({
         opacity: 0
@@ -52,7 +51,6 @@ $(function () {
     element.animate({
       opacity: 0
     }, 500, function () {
-      console.log('done') 
       element.css('display', 'none')
       stepsIndex++
       //  make next element visible - elements by default are display: none
@@ -76,7 +74,6 @@ $(function () {
     element.animate({
       opacity: 0
     }, 500, function () {
-      console.log('done') 
       element.css('display', 'none')
       stepsIndex--
       //  make next element visible - elements by default are display: none
