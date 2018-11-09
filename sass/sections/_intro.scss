@@ -5,6 +5,14 @@
   position: relative;
   transform: scale(1.01);
 
+  @include respond(tab-port) {
+    height: 51vh;
+  }
+
+  @include respond(phone) {
+    height: 25vh;
+  }
+
   &__background {
     // gets rid of blurry edges from filter: blur();
     transform: scale(1.01);
@@ -19,6 +27,24 @@
     align-items: center;
     clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%, 0% 0%);
     filter: blur(10px);
+
+    @include respond(tab-port) {
+      height: 50vh;
+    }
+
+    @include respond(phone) {
+      height: 25vh;
+      background: url("./img/httan-header-1.jpg");
+
+
+      background-repeat: no-repeat;
+      background-size: contain;
+      /* background-position: center; */
+      background-attachment: fixed;
+
+      clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%, 0% 0%);
+      filter: blur(2px);
+    }
   }
 
   &__darken-cover {
@@ -34,6 +60,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+
   }
 
   &__heading {
@@ -43,5 +71,13 @@
     animation: fade-in 4s forwards, slide-up 3s forwards;
     color: white;
     font-size: 7rem;
+
+    @include respond(phone) {
+      text-align: center;
+      font-size: 4rem;
+      animation: none;
+      opacity: 1;
+      top: 0;
+    }
   }
 }

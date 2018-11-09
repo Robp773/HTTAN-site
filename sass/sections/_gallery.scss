@@ -4,6 +4,10 @@
 
   height: 70vh;
 
+  @include respond(phone) {
+    height: 50vh;
+  }
+
   &__bg {
     background: linear-gradient(whitesmoke,
       rgba(70, 132, 153, 0.85),

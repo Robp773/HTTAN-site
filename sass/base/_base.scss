@@ -48,4 +48,9 @@ body {
   align-items: center;
   height: 50vh;
   opacity: 0;
+  @include respond(tab-port){
+    opacity: 1;
+    flex-direction: column-reverse;
+    height: fit-content;
+  }
 }

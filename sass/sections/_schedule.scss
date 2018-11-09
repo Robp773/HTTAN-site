@@ -6,8 +6,17 @@
   box-shadow: 0 0.5rem 2rem gray;
   padding: 2rem;
 
+  @include respond(tab-port) {
+    margin-bottom: 5rem;
+  }
+
+  @include respond(phone) {
+    padding: 0;
+    padding-bottom: 1rem;
+    box-shadow: none;
+  }
+
   &__content {
-    // background: rgba(70, 132, 153, 0.75);
     width: fit-content;
     color: gray;
   }
@@ -16,10 +25,31 @@
     color: $color-primary;
     text-align: center;
     font-size: 5rem;
+
+    @include respond(phone) {
+      font-size: 3.5rem;
+    }
   }
 
   &__iframe {
     width: 70rem;
     height: 80%;
+
+
+
+    @include respond(tab-land) {
+      width: 55rem;
+    }
+
+    @include respond(tab-port) {
+      width: 70vw;
+      height: 35%;
+    }
+
+    @include respond(phone) {
+      width: 100vw;
+    }
+
+
   }
 }
