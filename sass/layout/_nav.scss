@@ -1,11 +1,9 @@
 .nav {
-  background: #515151;
-  color: whitesmoke;
+  background: whitesmoke;
   padding: 0.5em 2rem;
-  // position: fixed;
   width: 100%;
   z-index: 9999;
-  align-items: center;
+  border-bottom: .5vh solid $color-tertiary;
 
   @include respond(phone) {
     padding: .5rem 0;
@@ -34,8 +32,8 @@
       }
 
       &:hover {
-        border-bottom: 2px solid whitesmoke;
-        border-top: 2px solid whitesmoke;
+        border-bottom: 2px solid $color-tertiary;
+        border-top: 2px solid $color-tertiary;
         cursor: pointer;
 
       }
