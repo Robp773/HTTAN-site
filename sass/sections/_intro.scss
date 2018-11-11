@@ -1,7 +1,7 @@
 .intro {
-  height: 81vh;
+  height: 60.75vh;
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%, 0% 0%);
-  background: $color-primary;
+  background: $color-tertiary;
   position: relative;
   transform: scale(1.01);
 
@@ -20,9 +20,9 @@
     background: url("./img/httan-header-1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     background-attachment: fixed;
-    height: 80vh;
+    height: 60vh;
     width: 100vw;
     align-items: center;
     clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%, 0% 0%);
@@ -35,13 +35,9 @@
     @include respond(phone) {
       height: 25vh;
       background: url("./img/httan-header-1.jpg");
-
-
       background-repeat: no-repeat;
       background-size: contain;
-      /* background-position: center; */
       background-attachment: fixed;
-
       clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%, 0% 0%);
       filter: blur(2px);
     }

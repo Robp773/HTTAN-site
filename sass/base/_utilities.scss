@@ -1,24 +1,29 @@
-.abs-center{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+.abs-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.underliner{
-    animation: underline 1.5s .5s forwards;
-    margin: auto;
-    border: 3px solid transparent;
+.underliner {
+  animation: underline 1.5s 0.5s forwards;
+  margin: auto;
+  border: 3px solid transparent;
 }
 
-.u-ital{
-    font-style: italic;
+.u-ital {
+  font-style: italic;
 }
 
-.u-underline{
-    display: inline-block;
-    text-decoration: underline $color-primary;
-    text-decoration-skip-ink: none;
+.u-underline {
+  display: inline-block;
+  // text-decoration: underline whitesmoke;;
+  border-bottom: 5px solid rgba(245, 245, 245, .7);
+  border-top: 5px solid rgba(245, 245, 245, .7);
 
+  text-decoration-skip-ink: none;
 }
 
+.faded-text{
+  color: rgba(245, 245, 245, .7);
+}
