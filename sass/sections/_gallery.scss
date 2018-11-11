@@ -1,27 +1,30 @@
 .gallery {
   text-align: center;
   position: relative;
-
-  height: 70vh;
+  height: 55vh;
 
   @include respond(phone) {
-    height: 50vh;
+    height: 40vh;
   }
 
   &__bg {
-    background: linear-gradient(whitesmoke,
-      rgba(70, 132, 153, 0.85),
-      rgba(70, 132, 153, 0.85),
-      whitesmoke);
+    background: linear-gradient(
+      $color-primary,
+      whitesmoke 25%,
+      whitesmoke 75%,
+       $color-primary,
+      );
+    // background: $color-primary;
     position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 100%;
     width: 100%;
+    border-top: .5vh solid $color-tertiary;
+    border-bottom: .5vh solid $color-tertiary;
   }
 }
-
 
 .main-carousel {
   border-top: 1rem solid whitesmoke;
