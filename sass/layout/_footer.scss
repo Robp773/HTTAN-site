@@ -1,5 +1,5 @@
 .footer {
-  background: #515151;
+  background: $color-primary;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -8,7 +8,8 @@
   font-size: 1.5rem;
   padding: .5rem 0;
   line-height: 175%;
-  // font-weight: bold;
+  border-top: .5vh solid $color-tertiary;
+
 
   &__logo {
     width: 4rem;
@@ -17,8 +18,8 @@
     transition: .25s background;
 
     &:hover {
-      background: $color-primary;
       cursor: pointer;
+    
     }
   }
 }
