@@ -1,5 +1,9 @@
 .step-bg {
   background: $color-primary;
+
+  @include respond(tab-land){
+    background: whitesmoke;
+  }
 }
 
 .home-btn {
@@ -66,7 +70,7 @@
       color: whitesmoke;
     }
 
-    &:active{
+    &:active {
       border: 3px solid whitesmoke;
       box-shadow: none;
     }
@@ -186,42 +190,42 @@
 }
 
 .step-parent {
-
-
   display: flex;
   display: none;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   width: 100vw;
-  height: 100vh;
   background: $color-primary;
 
+  @include respond(tab-land){
+    background: whitesmoke;
+  }
 }
 
 .step {
-  height: 100%;
+  min-height: 100vh;
   display: none;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 75%;
   background: whitesmoke;
 
-
   &__header {
-
-    // opacity: 0;
     font-size: 6rem;
-    // animation: fade-in 3s forwards;
   }
 
   &__content {
-    // opacity: 0;
-    // animation: fade-in 3s 1s forwards;
     font-size: 2.25rem;
     line-height: 150%;
     width: 75ch;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    background: whitesmoke;
+
+    @include respond(tab-land) {
+      width: fit-content;
+    }
   }
 
   &__btn-parent {
@@ -245,22 +249,21 @@
       &:active {
         box-shadow: 0;
       }
-    }
 
+    }
   }
 
   .step-one {
     justify-content: space-around;
 
-
-
     &__videos {
       text-align: center;
-      width: 75%;
+      width: 100%;
 
       &>h3 {
         font-size: 3rem;
       }
+      
     }
 
     &__vid-1,
@@ -288,7 +291,7 @@
 
     &__icon-parent {
       width: 100%;
-      height: 40rem;
+      height: 35rem;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -304,9 +307,15 @@
 
     &__video {
       width: 70rem;
-      height: 40rem;
+      max-width: 100vw;
+      height: 35rem;
       margin: auto;
       display: none;
+
+      @include respond(phone){
+        max-height: 20rem;
+        margin: 1rem auto;
+      }
 
     }
   }
