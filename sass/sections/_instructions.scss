@@ -47,6 +47,14 @@
     color: whitesmoke;
     position: relative;
 
+    @include respond(phone) {
+      padding: .75rem 4rem;
+    }
+
+    @include respond(small-phone) {
+      margin: 2rem;
+    }
+
     &::before {
       content: "";
       z-index: -1;
@@ -69,15 +77,10 @@
 
     &:hover::before {
       animation: link-expand .5s linear;
-
     }
 
     &:active {
       box-shadow: 0 0.25rem 2rem gray;
-    }
-
-    @include respond(phone) {
-      padding: .75rem 4rem;
     }
   }
 }

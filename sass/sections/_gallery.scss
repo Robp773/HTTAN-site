@@ -3,8 +3,16 @@
   position: relative;
   height: 55vh;
 
-  @include respond(phone) {
+  @include respond(tab-port) {
     height: 40vh;
+  }
+
+  @include respond(phone) {
+    margin: 5rem auto;
+  }
+
+  @include respond(small-phone) {
+    margin-bottom: 10rem;
   }
 
   &__bg {
@@ -14,7 +22,6 @@
       whitesmoke 75%,
        $color-primary,
       );
-    // background: $color-primary;
     position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
