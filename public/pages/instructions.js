@@ -9,7 +9,7 @@ let loadingCounter = 0;
 $(function () {
 
   let loadingTracker = setInterval(function () {
-    if (loadingCounter === 59) {
+    if (loadingCounter === 1) {
       $('.loading').animate({
         opacity: 0
       }, 500, function () {
