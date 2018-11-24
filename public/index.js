@@ -9,11 +9,9 @@ $(document).ready(function () {
     }
   })
 
-  $('#instructions-intro, #gallery, #schedule, #contact, #intro').click(function (e) {
+  $('#instructions-intro, #gallery, #schedule, #contact, #intro, #about').click(function (e) {
     $([document.documentElement, document.body]).animate({
       scrollTop: $(`.${e.currentTarget.attributes.id.value}`).offset().top - 100
     }, 750)
   })
-
-
 })
