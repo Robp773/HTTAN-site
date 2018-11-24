@@ -1,10 +1,4 @@
 .schedule {
-  text-align: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  box-shadow: 0 0.5rem 2rem gray;
-  padding: 2rem;
 
   @include respond(tab-port) {
     margin-bottom: 5rem;
@@ -18,11 +12,11 @@
 
   &__content {
     width: fit-content;
-    color: gray;
+    color: $color-secondary;
   }
 
   &__header {
-    color: $color-primary;
+    color: $color-secondary;
     text-align: center;
     font-size: 5rem;
 
@@ -31,11 +25,13 @@
     }
   }
 
+  &__frame-parent{
+    border: 4px solid $color-tertiary;
+  }
+
   &__iframe {
     width: 70rem;
-    height: 80%;
-
-
+    height: 50%;
 
     @include respond(tab-land) {
       width: 55rem;
@@ -49,7 +45,5 @@
     @include respond(phone) {
       width: 100vw;
     }
-
-
   }
 }

@@ -1,8 +1,8 @@
 .contact {
   text-align: center;
+  color: $color-secondary;
 
   &__header {
-    color: $color-primary;
     font-size: 5rem;
 
     @include respond(phone) {
@@ -15,7 +15,6 @@
   }
 
   &__icon {
-    color: $color-primary;
     font-size: 5rem;
   }
 }
