@@ -150,6 +150,8 @@
     &> :nth-child(n + 2):nth-child(-n + 8) {
       font-size: 7rem;
       animation: fade-out 0.9s forwards;
+      margin: 0;
+      padding: 0;
     }
 
     & :nth-child(8) {
@@ -179,6 +181,7 @@
     & :nth-child(2) {
       animation-delay: 3s !important;
     }
+
   }
 
   &__primary-header {
