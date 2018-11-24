@@ -73,8 +73,54 @@
       opacity: 1;
       top: 0;
     }
+
     @include respond(small-phone) {
       font-size: 3.5rem;
     }
   }
+
+  &__nothing-parent {
+    font-size: 0;
+    display: inline-block;
+    width: fit-content;
+ 
+    &> :nth-child(n):nth-child(-n + 8) {
+      font-size: 7rem;
+      animation: fade-out-in ease-in-out 4.5s forwards;
+    }
+
+    & :nth-child(7) {
+      animation-delay: 1.5s !important;
+    }
+
+    & :nth-child(7) {
+      animation-delay: 1.75s !important;
+    }
+
+    & :nth-child(6) {
+      animation-delay: 2s !important;
+    }
+
+    & :nth-child(5) {
+      animation-delay: 2.25s !important;
+    }
+
+    & :nth-child(4) {
+      animation-delay: 2.5s !important;
+    }
+
+    & :nth-child(3) {
+      animation-delay: 2.75s !important;
+    }
+
+    & :nth-child(2) {
+      animation-delay: 3s !important;
+    }
+
+    & :nth-child(1) {
+      animation-delay: 3.25s !important;
+    }
+
+  }
+
 }

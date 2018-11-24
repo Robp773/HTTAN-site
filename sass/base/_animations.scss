@@ -20,6 +20,20 @@
   }
 }
 
+@keyframes fade-out-in {
+
+  25%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes fade-to-transparent {
   100% {
     background: rgba(255, 255, 255, 0.75);
