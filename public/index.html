@@ -18,7 +18,7 @@
     <div class="nav">
         <div class="nav__content">
             <ul>
-                <!-- <li id="about">About</li> -->
+                <li id="about">About</li>
                 <li id="instructions-intro">Instructions</li>
                 <li id="gallery">Gallery</li>
                 <li id="schedule">Schedule</li>
@@ -66,20 +66,7 @@
     </div>
 
 
-    <!-- <div class="about">
 
-        <h2 class="about__header">About</h2>
-        <div class="about__bio-mugshot-parent">
-            <div class="about__bio">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis ab neque rem
-                aspernatur fugiat magni porro maxime dolorem nemo inventore, nostrum velit ratione laudantium corrupti?
-                Nam rerum nulla cupiditate est. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, sint
-                doloribus pariatur quae quod similique culpa expedita facere vero illum, explicabo minus at odio
-                laudantium. Accusantium laudantium quidem molestias blanditiis.</div>
-            <div class="about__mugshot-parent">
-                <img class="about__mugshot" src="./img/yoga.svg" alt="mugshot" />
-            </div>
-        </div>
-    </div> -->
 
 
     <div class="gallery">
@@ -112,8 +99,25 @@
         </div>
     </div>
 
+    <div class="about">
+
+        <h2 class="about__header">About</h2>
+        <div class="about__bio-mugshot-parent">
+            <div class="about__bio">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis ab neque rem
+                aspernatur fugiat magni porro maxime dolorem nemo inventore, nostrum velit ratione laudantium corrupti?
+                Nam rerum nulla cupiditate est. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, sint
+                doloribus pariatur quae quod similique culpa expedita facere vero illum, explicabo minus at odio
+                laudantium. Accusantium laudantium quidem molestias blanditiis.</div>
+            <div class="about__mugshot-parent">
+                <img class="about__mugshot" src="./img/yoga.svg" alt="mugshot" />
+            </div>
+        </div>
+    </div>
+
 
     <div class="contact-schedule">
+        <div class="background-blur"></div>
+
 
         <div id="contact" class="contact">
             <h2 class="contact__header">Contact Info</h2>
@@ -130,17 +134,17 @@
             <div class="schedule__content">
                 <h2 class="schedule__header">Class Schedule</h2>
 
-                <iframe class="schedule__iframe" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=6n07k5vaqp2ur5ga71p6ig5a4c%40group.calendar.google.com&amp;color=%230F4B38&amp;ctz=America%2FNew_York"
-                    style="border-width:0" frameborder="0" scrolling="no">
-                </iframe>
-
+                <div class="schedule__frame-parent">
+                    <iframe class="schedule__iframe" src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=6n07k5vaqp2ur5ga71p6ig5a4c%40group.calendar.google.com&amp;color=%230F4B38&amp;ctz=America%2FNew_York"
+                        style="border-width:0" frameborder="0" scrolling="no">
+                    </iframe>
+                </div>
             </div>
-
         </div>
     </div>
 
     <div class="footer">
-        <img src="./img/yoga.white.svg" alt="Site logo - yoga icon" id="intro" class="footer__logo" />
+        <img src="./img/yoga.svg" alt="Site logo - yoga icon" id="intro" class="footer__logo" />
         <div class="footer__copyright"> &copy; 2018 John Feddersen</div>
         <div class="footer__site-name">HowToThinkofNothing.com</div>
     </div>
