@@ -16,12 +16,7 @@
   }
 
   &__bg {
-    background: linear-gradient(
-      $color-primary,
-      whitesmoke 25%,
-      whitesmoke 75%,
-       $color-primary,
-      );
+    background: $color-primary;
     position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
