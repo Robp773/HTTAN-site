@@ -3,8 +3,11 @@
 let steps = ['one', 'two', 'three', 'four', 'five']
 // counter for where user is in steps
 let stepsIndex = 0
-
 let loadingCounter = 0;
+let switchTimer;
+
+let vid = document.getElementById("slowFastVid");
+
 
 $(function () {
 
@@ -31,12 +34,7 @@ $(function () {
     }
     loadingCounter++;
   }, 1000)
-  // set play back rate of bg video to be 50% of normal time
-  // cuts down on video resets while 60 seconds of loading is passing
-  // not working with jQuery for unknown reason
-  var vid = document.getElementById("videoEl");
-  vid.playbackRate = 0.75;
-  // next button clicks
+
 
   $('.loading__refresh-btn').on('click', function () {
     loadingCounter = 0;
@@ -87,17 +85,40 @@ $(function () {
   })
 
   $('.step-one__vid-1').on('click', function () {
+
     $('.step-one__video').attr('src', '../img/fast.mp4').css('display', 'block');
-    $('.step-one__icon-parent').css('display', 'none');
+    $('.step-one__icon-parent').css('display', 'none');    
+    
+    // vid.playbackRate = 1;
+    clearTimeout(switchTimer)
   })
 
   $('.step-one__vid-2').on('click', function () {
-    $('.step-one__video').attr('src', '../img/slow.mp4').css('display', 'block');
+    $('.step-one__video').attr('src', '../img/slow-2.mp4').css('display', 'block');
     $('.step-one__icon-parent').css('display', 'none');
-  })
 
-  $('.home-btn').on('click', function () {
-    console.log('test worked')
+    // set play back rate of bg video to be 50% of normal time
+    // cuts down on video resets while 60 seconds of loading is passing
+    // not working with jQuery for unknown reason
+    vid.playbackRate = 0.5;
+    // next button clicks
+    clearTimeout(switchTimer)
+
+    switchTimer = setTimeout(function () {
+      let element = $(`.step-${steps[0]}`)
+      element.animate({
+        opacity: 0
+      }, 500, function () {
+        element.css('display', 'none')
+        //  make next element visible - elements by default are display: none
+        $(`.step-${steps[1]}`).css('opacity', '0')
+        $(`.step-${steps[1]}`).css('display', 'flex')
+        $(`.step-${steps[1]}`).animate({
+          opacity: 1
+        }, 500)
+        stepsIndex++
+      })
+    }, 30000)
   })
   // runLoading()
 })
