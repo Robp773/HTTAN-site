@@ -1,15 +1,27 @@
 .about {
-    height: 100vh;
-    background: white;
-    margin-top: -8.75rem;
-    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
-  
-    &__content{
-      position: relative;
-      top: 10rem;
-    }
-    &__h2 {
-      font-size: 5rem;
-      text-align: center;
-    }
+
+  border-bottom: 5px solid $color-tertiary;
+  padding: 3rem 0;
+
+  &__header {
+    color: $color-primary;
+    text-align: center;
+    font-size: 5rem;
+
   }
+
+  &__bio-mugshot-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__bio {
+    font-size: 2rem;
+    max-width: 75ch;
+  }
+
+  &__mugshot {
+    width: 30rem;
+  }
+}
