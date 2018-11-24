@@ -1,9 +1,9 @@
 .footer {
-  background: $color-primary;
+  // background: $color-tertiary;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  color: whitesmoke;
+  color: $color-tertiary;
   align-items: center;
   font-size: 1.5rem;
   padding: .5rem 0;
