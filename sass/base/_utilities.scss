@@ -6,9 +6,14 @@
 }
 
 .underliner {
-  animation: underline 1.5s 0.5s forwards;
+  animation: underline 1.5s .5s ease-out forwards;
   margin: auto;
   border: 3px solid transparent;
+
+  @include respond(phone) {
+    animation: mobile-underline 1.5s .5s ease-out forwards;
+  }
+
 }
 
 .u-ital {
@@ -17,13 +22,4 @@
 
 .u-underline {
   display: inline-block;
-  // text-decoration: underline whitesmoke;;
-  border-bottom: 5px solid rgba(245, 245, 245, .7);
-  border-top: 5px solid rgba(245, 245, 245, .7);
-
-  text-decoration-skip-ink: none;
-}
-
-.faded-text{
-  color: rgba(245, 245, 245, .7);
 }
