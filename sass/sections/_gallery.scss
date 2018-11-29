@@ -25,6 +25,10 @@
     width: 100%;
     border-top: .5vh solid $color-tertiary;
     border-bottom: .5vh solid $color-tertiary;
+
+    @include respond(tab-port) {
+      height: 105%;
+    }
   }
 }
 
