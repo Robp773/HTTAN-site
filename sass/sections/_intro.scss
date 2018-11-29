@@ -62,16 +62,22 @@
     position: relative;
     top: 8rem;
     opacity: 0;
-    animation: fade-in 4s forwards, slide-up 3s forwards;
+    animation: fade-in 2s ease-out forwards, slide-up 2s ease-out forwards;
     color: white;
     font-size: 7rem;
 
+    
+
     @include respond(phone) {
       text-align: center;
-      font-size: 4rem;
+      font-size: 5rem;
       animation: none;
       opacity: 1;
       top: 0;
+    }
+
+    @media (max-width: 430px){
+      font-size: 4rem;
     }
 
     @include respond(small-phone) {
@@ -87,6 +93,18 @@
     &> :nth-child(n):nth-child(-n + 8) {
       font-size: 7rem;
       animation: fade-out-in ease-in-out 4.5s forwards;
+
+      @include respond(phone){
+        font-size: 5rem;
+      }
+    
+      @media (max-width: 430px){
+        font-size: 4rem;
+      }
+
+      @include respond(small-phone){
+        font-size: 3.5rem;
+      }
     }
 
     & :nth-child(7) {
