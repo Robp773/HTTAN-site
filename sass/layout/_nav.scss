@@ -20,7 +20,7 @@
 
     &>ul>li {
       display: inline-block;
-      margin: 0 1rem;
+      margin: 0 .5rem;
       border-bottom: 2px solid transparent;
       border-top: 2px solid transparent;
       transition: 0.5s all;
@@ -29,6 +29,11 @@
       @include respond(phone) {
         padding: 0;
         margin: 0 .5rem;
+        font-size: 2rem;
+      }
+      @include respond(small-phone) {
+        margin: 0 .25rem;
+        font-size: 1.75rem;
       }
 
       &:hover {
