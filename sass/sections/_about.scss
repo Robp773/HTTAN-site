@@ -14,11 +14,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include respond(tab-land) {
+      flex-direction: column-reverse;
+    }
   }
 
   &__bio {
     font-size: 2rem;
     max-width: 75ch;
+    @include respond(tab-land) {
+      margin-top: 1rem;
+      max-width: 75%;
+    }
+    @include respond(phone) {
+      max-width: 85%;
+    }
   }
 
   &__mugshot {
