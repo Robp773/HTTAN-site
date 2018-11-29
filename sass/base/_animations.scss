@@ -22,10 +22,11 @@
 
 @keyframes fade-out-in {
 
-  25%{
+  25% {
     opacity: 0;
   }
-  50%{
+
+  50% {
     opacity: 0;
   }
 
@@ -46,13 +47,31 @@
   0% {
     opacity: .25;
     width: 0%;
-    border-bottom: 5px solid whitesmoke;
+    border-bottom: 5px solid rgba(245, 245, 245, .7);
+    ;
   }
 
   100% {
     opacity: 1;
     width: 100%;
-    border-bottom: 5px solid whitesmoke
+    border-bottom: 5px solid rgba(245, 245, 245, .7);
+    ;
+
+  }
+}
+
+@keyframes mobile-underline {
+  0% {
+    opacity: .25;
+    width: 0%;
+    border-bottom: 3px solid rgba(245, 245, 245, .7);
+    
+  }
+
+  100% {
+    opacity: 1;
+    width: 100%;
+    border-bottom: 3px solid rgba(245, 245, 245, .7);
   }
 }
 
@@ -100,7 +119,7 @@
 @keyframes link-expand {
   0% {
     opacity: .75;
-   
+
   }
 
 
