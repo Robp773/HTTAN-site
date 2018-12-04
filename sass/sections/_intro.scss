@@ -6,11 +6,11 @@
   transform: scale(1.01);
 
   @include respond(tab-port) {
-    height: 51vh;
+    height: 50.5vh;
   }
 
   @include respond(phone) {
-    height: 25vh;
+    height: 25.5vh;
   }
 
   &__background {
@@ -138,7 +138,5 @@
     & :nth-child(1) {
       animation-delay: 3.25s !important;
     }
-
   }
-
 }
