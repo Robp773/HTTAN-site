@@ -1,43 +1,16 @@
 .gallery {
   text-align: center;
-  position: relative;
-  height: 55vh;
-
-  @include respond(tab-port) {
-    height: 40vh;
-  }
-
-  @include respond(phone) {
-    margin: 5rem auto;
-  }
-
-  @include respond(small-phone) {
-    margin-bottom: 10rem;
-  }
-
-  &__bg {
-    background: $color-primary;
-    position: absolute;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    width: 100%;
-    border-top: .5vh solid $color-tertiary;
-    border-bottom: .5vh solid $color-tertiary;
-
-    @include respond(tab-port) {
-      height: 105%;
-    }
-  }
-}
-
-.main-carousel {
-  border-top: 1rem solid whitesmoke;
-  border-bottom: 1rem solid whitesmoke;
+  background: $color-primary;
+  padding: 4.5rem 0;
+  border-top: .5vh solid $color-tertiary;
+  border-bottom: .5vh solid $color-tertiary;
 }
 
 .carousel-image {
   width: 50rem;
   height: 35rem;
+}
+
+.flickity-page-dots .dot.is-selected {
+  background: whitesmoke;
 }
