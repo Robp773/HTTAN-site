@@ -1,12 +1,8 @@
 .schedule {
 
-  @include respond(tab-port) {
-    margin-bottom: 5rem;
-  }
-
   @include respond(phone) {
+    margin-bottom: 0;
     padding: 0;
-    padding-bottom: 1rem;
     box-shadow: none;
   }
 
