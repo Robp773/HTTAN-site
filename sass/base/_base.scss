@@ -60,7 +60,6 @@ body {
   @include respond(tab-port) {
     opacity: 1;
     flex-direction: column-reverse;
-    height: fit-content;
   }
 }
 
